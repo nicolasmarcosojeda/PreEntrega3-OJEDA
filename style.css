@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #formulario {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #formulario input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #formulario button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #resultado {
+    text-align: center;
+  }
+  
+  .cerveza {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .cerveza img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .cerveza .nombre {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .cerveza .stock {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
