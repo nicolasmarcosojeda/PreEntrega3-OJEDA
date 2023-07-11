@@ -57,14 +57,15 @@ function agregarCerveza() {
 }
 
 function mostrarStockCervezas() {
-  resultadoDiv.innerHTML = ""; // Limpiar contenido anterior
-
   cervezas.forEach((cerveza, index) => {
     cerveza.stockCalculado = calcularStock(cerveza.cantidadDisponible, cerveza.cantidadVendida, cerveza.cantidadConsumida);
 
-    let p = document.createElement("p");
-    p.textContent = `El stock de la cerveza ${cerveza.nombre} es: ${cerveza.stockCalculado}`;
-    resultadoDiv.appendChild(p);
+    Swal.fire({
+      title: `Stock de la cerveza ${cerveza.nombre}`,
+      text: `El stock es: ${cerveza.stockCalculado}`,
+      icon: "info",
+      confirmButtonText: "Aceptar"
+    });
   });
 }
 
